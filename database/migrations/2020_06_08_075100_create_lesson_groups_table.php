@@ -26,25 +26,6 @@ class CreateLessonGroupsTable extends Migration
         });
     }
 
-//CREATE TABLE `lesson_group` (
-//`id` INT(11) NOT NULL AUTO_INCREMENT,
-//`group_id` INT(11) NOT NULL COMMENT 'Идентификатор группы',
-//`lesson_id` INT(11) NOT NULL COMMENT 'Идентификатор урока',
-//`time_start` DATETIME NOT NULL COMMENT 'Время начала урока',
-//`teacher_id` INT(11) NOT NULL COMMENT 'Идентификатор учителя',
-//PRIMARY KEY (`id`) USING BTREE,
-//INDEX `teacher_id` (`teacher_id`) USING BTREE,
-//INDEX `group_id` (`group_id`) USING BTREE,
-//INDEX `lesson_id` (`lesson_id`) USING BTREE,
-//CONSTRAINT `lesson_group_ibfk_1` FOREIGN KEY (`teacher_id`) REFERENCES `yii2_starter`.`user` (`id`) ON UPDATE RESTRICT ON DELETE RESTRICT,
-//CONSTRAINT `lesson_group_ibfk_2` FOREIGN KEY (`group_id`) REFERENCES `yii2_starter`.`course_group` (`id`) ON UPDATE RESTRICT ON DELETE RESTRICT,
-//CONSTRAINT `lesson_group_ibfk_3` FOREIGN KEY (`lesson_id`) REFERENCES `yii2_starter`.`lesson` (`id`) ON UPDATE RESTRICT ON DELETE RESTRICT
-//)
-//COLLATE='utf8_general_ci'
-//ENGINE=InnoDB
-//;
-
-
     /**
      * Reverse the migrations.
      *

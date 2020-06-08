@@ -22,19 +22,6 @@ class CreateStudentProgressTable extends Migration
             $table->timestamps();
         });
     }
-//CREATE TABLE `student_progress` (
-//`id` INT(11) NOT NULL AUTO_INCREMENT,
-//`student_id` INT(11) NOT NULL COMMENT 'Идентификатор пользователя (студента)',
-//`lesson_group_id` INT(11) NOT NULL COMMENT 'Идентификатор пройденного урока',
-//PRIMARY KEY (`id`) USING BTREE,
-//INDEX `lesson_group_id` (`lesson_group_id`) USING BTREE,
-//INDEX `student_id` (`student_id`) USING BTREE,
-//CONSTRAINT `student_progress_ibfk_1` FOREIGN KEY (`lesson_group_id`) REFERENCES `yii2_starter`.`lesson_group` (`id`) ON UPDATE RESTRICT ON DELETE RESTRICT,
-//CONSTRAINT `student_progress_ibfk_2` FOREIGN KEY (`student_id`) REFERENCES `yii2_starter`.`user` (`id`) ON UPDATE RESTRICT ON DELETE RESTRICT
-//)
-//COLLATE='utf8_general_ci'
-//ENGINE=InnoDB
-//;
 
     /**
      * Reverse the migrations.
